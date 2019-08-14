@@ -1,0 +1,5 @@
+1)It would be better to have styles in another CSS file.
+2)It is not obvious about the selectors from what part of body they are coming from
+3)h1 and p have the same id
+4)There are both inline style and style in the head
+5)There are lots of div in the code it would be better to use article, section, footer, etc instead of that

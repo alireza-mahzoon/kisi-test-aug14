@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="showAnswer"></h1>
+
+<script>
+
+var str = window.prompt("Please enter a string");
+function titleCase(str) {
+  var answer = [];
+  str = str.split(" ");
+  answer = str.map(capitalize);
+  answer = answer.join(" ")
+  document.getElementById("showAnswer").innerHTML = answer;
+  console.log(answer);
+  return answer;
+}
+
+function capitalize(x) {
+  var firstLetter = x.charAt(0);
+  console.log(firstLetter);
+  var capitalLetter = firstLetter.toUpperCase();
+  x = x.replace(firstLetter, capitalLetter);
+  return x;
+}
+titleCase(str);
+
+</script>
+
+</body>
+</html>
